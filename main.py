@@ -302,7 +302,7 @@ class ButtonsGrid(QGridLayout):
         displayText = self.display.text()
 
         if not isValidNumber(displayText) or self._left is None:
-            self._showError('Você não digitou o outro número')
+            self._showError('Conta incompleta')
             self.display.setFocus()
             return
         self._right = convertToNumber(displayText)
